@@ -1,0 +1,172 @@
+.container-for-sale {
+  margin-top: 50px;
+}
+
+.container-for-sale h1 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 40px;
+}
+
+.card-properties {
+  position: relative;
+  max-width: 255px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #F6F6F6;
+  transition: ease-in 0.3s;
+}
+
+.card-properties:hover {
+opacity: 0.98;
+transform: scale(1.02)
+}
+
+.card-details {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-img {
+  width: 100%;
+  min-height: 290px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.agency-logo {
+  position: absolute;
+  top: 260px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 13px 16px -10px;
+  overflow: hidden;
+}
+
+.agency-logo img {
+  position: relative;
+  top: 5px;
+  left: 1px;
+  width: 53px;
+  height: 53px;
+  object-fit: cover;
+}
+
+.contact-name {
+  font-size: 12px;
+  color: #666;
+}
+
+.card-property-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid #c7c5c5 1px;
+  margin-top: 8px;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+.card-details-info {
+  font-size: 12px;
+  color: #666;
+
+}
+
+.fas, .far {
+  color: #FDA94F;
+}
+
+.fa {
+  color: #666;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+.container-for-sale .card-properties .card-details a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container-for-sale .card-properties .card-details a:hover {
+  color: #FDA94F;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-properties {
+    max-width: 31.5%;
+  }
+
+  .agency-logo img {
+    top: 0px;
+    left: 0px;
+    width: 45px;
+    height: 45px;
+}
+  
+}
+
+@media screen and (max-width: 990px) {
+  .card-properties {
+    max-width: 48.1%;
+  }
+
+  .card-img {
+    min-height: 350px;
+  }
+
+  .agency-logo {
+    top: 327px;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .card-properties {
+    max-width: 47.5%;
+  }
+
+  .card-img {
+    min-height: 240px;
+  }
+
+  .agency-logo {
+    width: 40px;
+    height: 40px;
+    top: 220px;
+    right: 16px;
+  }
+
+  .agency-logo img {
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+}
+}
+
+@media screen and (max-width: 560px) {
+  .card-properties {
+    max-width: 100%;
+  }
+
+  .card-details {
+    position: relative;
+  }
+}
