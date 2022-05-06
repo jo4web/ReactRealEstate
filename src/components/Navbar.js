@@ -72,7 +72,7 @@ export default function Navbar() {
   return (
     <>
       <nav style={style}>
-          <img src={Logo} alt="Real Estate" />
+          <Link to={{pathname: '/'}}><img src={Logo} alt="Real Estate" /></Link>
             <div className="menu">
               <Link to={{pathname: '/'}}>Home</Link>
               <Link to={{pathname: `/search/?locationExternalIDs=6020&purpose=for-sale&sort=any&categoryExternalID=all&roomsMin=any`}}>For Sale</Link>

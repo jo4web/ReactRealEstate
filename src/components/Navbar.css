@@ -95,6 +95,7 @@ nav > div.hamburger-menu {
 nav >  div.hamburger-menu > button {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 nav >  div.hamburger-menu > button > i {

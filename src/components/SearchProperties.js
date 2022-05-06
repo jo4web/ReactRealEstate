@@ -108,6 +108,7 @@ export default function SearchProperties() {
   }
 
   const handleSubmit = (e) => {
+
     if (location === '' || externalID === '') {
       e.preventDefault();
       console.log("Invalid search") 
@@ -135,6 +136,7 @@ export default function SearchProperties() {
         value={location}
         onChange={handleLocation} 
         onKeyDown={handleKey}
+        onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
       />
         <select className="select1" value={propertyType} onChange={handlePropertyType}>
           <option value="all">All Properties</option>
